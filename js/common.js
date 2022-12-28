@@ -1,6 +1,6 @@
 
 // header
-fetch("/layout/header.html")
+fetch("../layout/header.html")
 .then((response) => {
   return response.text();
 })
@@ -50,7 +50,7 @@ fetch("/layout/header.html")
 });
 
 // footer
-fetch("/layout/footer.html")
+fetch("../layout/footer.html")
 .then((response) => {
   return response.text();
 })
