@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <title>대한환경공학회 저널검색 > 검색결과</title>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/contents.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <!-- js -->
+  <script src="/js/common.js" defer></script>
+</head>
+<body>
+  
+  <header id="header" class="header"></header>
+
+  <div class="tp">
+    <div class="page_top">
+      <div class="inner">
+        검색결과
+      </div>
+    </div>
+    <div class="lng">
+      <div class="c_container">
+        <ul class="left">
+          <li>
+            <a href="#">
+              <img src="../img/home-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page">저널검색</li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page">검색결과</li>
+        </ul>
+        <div class="right">
+          <a href="#" class="btn">
+            <img src="../img/share-icon.png" alt="">
+          </a>
+          <a href="#" class="btn">
+            <img src="../img/print-icon.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="contents journalsearch result">
+    <div class="c_container">
+      <div class="contents_inner">
+        <h3 class="contents_tit">검색결과</h3>
+        <div class="result_wrap">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" class="head_check">
+                  <div class="save_id chk_box">
+                    <input type="checkbox" class="all_check" onclick="selectAll(this)">
+                  </div>
+                </th>
+                <th>
+                  <a href="#">상세보기</a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="chk_box">
+                    <input type="checkbox" class="chk">
+                  </div>     
+                </td>
+                <td width="80%" class="journal_list">
+                  <div>
+                    <div>
+                      <p class="journal_tit">3MW급 해상용 풍력발전시스템 WinDS3000TM 개발</p>
+                      <p class="author">박종포</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>P.<span>153</span></p>
+                    <a href="#">원문다운로드</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="chk_box">
+                    <input type="checkbox" class="chk">
+                  </div>
+                </td>
+                <td width="80%" class="journal_list">
+                  <div>
+                    <div>
+                      <p class="journal_tit">한국형 재생에너지 3020 이행계획 달성을 위한 해상풍력발전의 현재와 전망</p>
+                      <p class="author">박민규* ㆍ박성준* ㆍ성병철* ㆍ최연정* ㆍ정석희† : Vol.43 No.3</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>P.<span>156</span></p>
+                    <a href="#">원문다운로드</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <a href="#">처음</a>
+          <a href="#">이전</a>
+          <ul>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+          </ul>
+          <a href="#">다음</a>
+          <a href="#">맨끝</a>
+        </div>
+      </div>
+    </div> 
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+  <script>
+
+    const checkboxes = document.querySelectorAll('.chk')
+    const checkAll = document.querySelector('.all_check')
+
+    function selectAll(e) {
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = e.checked;
+      })
+    }
+
+    checkboxes.forEach(e => {
+      e.onclick = function(){
+        if( this.checked == false ) {
+          checkAll.checked = false
+        }
+      }
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <title>대한환경공학회 회원관련 > 비밀번호변경</title>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contents.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <!-- js -->
+  <script src="../js/common.js" defer></script>
+</head>
+<body>
+  
+  <header id="header" class="header"></header>
+
+  <div class="tp">
+    <div class="page_top">
+      <div class="inner">
+        비밀번호변경
+      </div>
+    </div>
+    <div class="lng">
+      <div class="c_container">
+        <ul class="left">
+          <li>
+            <a href="#">
+              <img src="../img/home-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page">회원관련</li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page">비밀번호변경</li>
+        </ul>
+        <div class="right">
+          <a href="#" class="btn">
+            <img src="../img/share-icon.png" alt="">
+          </a>
+          <a href="#" class="btn">
+            <img src="../img/print-icon.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="contents member changepw user_change">
+    <div class="c_container">
+      <div class="contents_inner">
+        <h3 class="contents_tit">비밀번호변경</h3>
+        <div class="top_txt">
+          <div class="guide">안내</div>
+          <ul>
+            <li><span class="blue">관리자</span> 회원님의 개인정보보호를 위하여 <span class="red">6개월 이상 비밀번호를 변경하지 않은 경우</span> 비밀번호 변경 안내를 하고 있습니다.</li>
+            <li>비밀번호 변경을 원하지 않을 경우 [ 다음에 변경하기 ] 버튼 클릭으로 1개월 동안 안내를 받지 않을 수 있습니다.</li>
+            <li>비밀번호는 숫자, 영문소문자, 특수문자를 조합하여 사용하시는 것이 안전하며, 주기적(최소 6개월)으로 변경 하시기 바랍니다.</li>
+            <li>쉬운 비밀번호나 자주 쓰는 사이트의 비밀번호가 같을 경우, 도용되기 쉬우므로 주기적으로 변경하셔서 사용 하는 것이 좋습니다.</li>
+            <li>다른 사람이 쉽게 알아 낼 수 있는 비밀번호는 개인정보 유출의 위험이 높으므로 사용을 자제해 주시기 바랍니다.</li>
+          </ul>
+        </div>
+        <form action="">
+          <div class="form_top">
+            <div class="change_box">
+              <div>
+                <label for="current_pw">현재 비밀번호</label>
+                <input type="password" id="current_pw" />
+              </div>
+              <div>
+                <label for="new_pw">새로운 비밀번호</label>
+                <input type="password" name="" id="new_pw" />
+              </div>
+              <div>
+                <label for="new_pwch">비밀번호 확인</label>
+                <input type="password" name="" id="new_pwch" />
+              </div>
+            </div>
+          </div>
+          <div class="form_bottom">
+            <button class="change_pw">수정하기</button>
+            <button type="button" onclick="history.go(-1)">다음에 변경</button>
+          </div>
+        </form>
+      </div>
+    </div> 
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+</body>
+</html>

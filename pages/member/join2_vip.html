@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <title>대한환경공학회 회원관련 > 회원가입</title>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contents.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <!-- js -->
+  <script src="../js/common.js" defer></script>
+</head>
+<body>
+  
+  <header id="header" class="header"></header>
+
+  <div class="tp">
+    <div class="page_top">
+      <div class="inner">
+        회원가입
+      </div>
+    </div>
+    <div class="lng">
+      <div class="c_container">
+        <ul class="left">
+          <li>
+            <a href="#">
+              <img src="../img/home-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page">회원관련</li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page">회원가입</li>
+        </ul>
+        <div class="right">
+          <a href="#" class="btn">
+            <img src="../img/share-icon.png" alt="">
+          </a>
+          <a href="#" class="btn">
+            <img src="../img/print-icon.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="contents member join join_form">
+    <div class="c_container">
+      <div class="contents_inner">
+        <h3 class="contents_tit">회원가입</h3>
+        <div class="join_form">
+          <div class="explain">
+            <span class="box">안내</span>
+            <span><strong>*</strong>는 필수 입력사항입니다.</span>
+          </div>
+          <form action="">
+            <table>
+              <caption>기본정보입력</caption>
+              <tbody>
+                <tr>
+                  <th class="essential"><label for="user_num">회비선택</label></th>
+                  <td>중소기업</td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_num">회원번호</label></th>
+                  <td>
+                    <input type="number" id="user_num" value="" readonly>
+                    <span class="comment">※ 회원번호는 자동부여됩니다</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_id">회원ID</label></th>
+                  <td>
+                    <input type="text" id="user_id" required>
+                    <a href="#">중복확인</a>
+                    <span class="comment">※ 6자 ~ 12자의 영문 소문자, 숫자가 조합된 문자열</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_pw">비밀번호</label></th>
+                  <td>
+                    <input type="password" name="" id="user_pw" required>
+                    <span class="comment">※ 6자 ~ 14자의 영문 소문자나 숫자, 특수기호가 조합된 문자열</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_pwch">비밀번호 확인</label></th>
+                  <td><input type="password" name="" id="user_pwch" required></td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_agency">기관명</label></th>
+                  <td><input type="text" name="" id="user_agency" required></td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_ceo">대표이사</label></th>
+                  <td><input type="text" name="" id="user_ceo" required></td>
+                </tr>
+                <tr>
+                  <th class="essential" rowspan="2"><label for="user_add">기관 주소</label></th>
+                  <td>
+                    <input type="text" readonly>
+                    <a href="#">우편번호 찾기</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" class="user_add wid50" readonly required>
+                    <input type="text" class="user_add wid50" required>
+                  </td>                  
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_business">업태, 종목</label></th>
+                  <td><input type="text" name="" id="user_business" class="wid50" required></td>
+                </tr>
+                <tr>
+                  <th class="essential">
+                    <label for="user_name">담당자 성명</label>
+                  </th>
+                  <td>
+                    <input type="text" class="user_name" required>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="user_tel">담당자 전화번호</label></th>
+                  <td class="tel">
+                    <select name="" id="user_tel">
+                      <option value="">-</option>
+                      <option value="02">02</option>
+                      <option value="031">031</option>
+                      <option value="032">032</option>
+                      <option value="041">041</option>
+                      <option value="042">042</option>
+                      <option value="043">043</option>
+                      <option value="044">044</option>
+                      <option value="051">051</option>
+                      <option value="052">052</option>
+                      <option value="053">053</option>
+                      <option value="054">054</option>
+                      <option value="055">055</option>
+                      <option value="061">061</option>
+                      <option value="062">062</option>
+                      <option value="063">063</option>
+                      <option value="064">064</option>
+                      <option value="010">010</option>
+                    </select>
+                    <span>-</span>
+                    <input type="number" name="" id="user_tel_mid" required>
+                    <span>-</span>
+                    <input type="number" name="" id="user_tel_last" required>                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="essential">
+                    <label for="user_email_id">담당자 E-mail</label>
+                  </th>
+                  <td>
+                    <input type="text" class="user_email_id" required>
+                    <span>@</span>
+                    <input type="text" class="user_email_add wid50" required>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="essential"><label for="">이메일 수신여부</label></th>
+                  <td>
+                    <div>
+                      <input type="radio" name="email_agree" id="agree">
+                      <label for="agree">수신</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="email_agree" id="noagree">
+                      <label for="noagree">수신거부</label>
+                    </div>
+                    <span class="comment">※ 이용목적 : 이벤트/설문/학술정보 등 학회소식을 발송</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="last_table">
+              <caption>결제하실 회비내역</caption>
+              <tbody>
+                <tr>
+                  <th class="essential"><label for="">결제방법</label></th>
+                  <td>
+                    <div>
+                      <input type="radio" name="pay_method" id="card">
+                      <label for="card">신용카드</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="pay_method" id="accout">
+                      <label for="accout">실시간계좌이체</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="pay_method" id="deposit">
+                      <label for="deposit">무통장입금</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="pay_method" id="receipt">
+                      <label for="receipt">지로납부</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="no_flex">
+                    <table class="result">
+                      <thead>
+                        <tr>
+                          <th>No.</th>
+                          <th>회비종류</th>
+                          <th>금액</th>
+                          <th>납입년도</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>중소기업 가입비</td>
+                          <td>500,000원</td>
+                          <td>2022</td>
+                        </tr>
+                        <tr>
+                          <th colspan="4">
+                            총 결제 금액 : <span>0</span>원
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btns">
+              <button class="join_us">회원가입</button>
+              <button class="reset">다시입력</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+</body>
+</html>
