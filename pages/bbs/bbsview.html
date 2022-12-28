@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <title>대한환경공학회 저널검색 > </title>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contents.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <!-- js -->
+  <script src="../js/common.js" defer></script>
+</head>
+<body>
+  
+  <header id="header" class="header"></header>
+
+  <div class="tp">
+    <div class="page_top">
+      <div class="inner">
+        
+      </div>
+    </div>
+    <div class="lng">
+      <div class="c_container">
+        <ul class="left">
+          <li>
+            <a href="#">
+              <img src="../img/home-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page"></li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page"></li>
+        </ul>
+        <div class="right">
+          <a href="#" class="btn">
+            <img src="../img/share-icon.png" alt="">
+          </a>
+          <a href="#" class="btn">
+            <img src="../img/print-icon.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="contents bbs bbsview">
+    <div class="c_container">
+      <div class="contents_inner">
+        <h3 class="contents_tit">공지사항</h3>
+        <div class="list_wrap">
+          <table>
+            <tbody>
+              <tr>
+                <td class="view_tp">
+                  <div>
+                    <div class="list_tit">2022년 국내학술대회 경품 이벤트 안내</div>
+                    <p class="line"></p>
+                    <div class="list_info">
+                      <p>등록일 : <span>2022-10-14</span></p>
+                      <p>조회수 : <span>230</span></p>
+                      <p>작성자 : <span>관리자</span></p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="view_contents">
+                  <div>
+                    2022 환경신진연구자그룹 워크숍 사전모임 개최<br>
+                    <br>
+                    - 2022년 9월 16일, 국립한밭대학교 S0동 국제교류관 502호<br>
+                    - 약 30여명의 신진연구자 + 워크숍 운영위원회 (5명) 참석<br>
+                    - 화학적 수처리, 모델링, 소재/에너지, 생물학적 수처리, 막분리 분야<br>
+                    - 모든 개인소개 발표 및 5명 신진연구자 분야별 main 발표 진행<br><br>
+                    <img src="../img/ex-img.png" alt="">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="add_file">
+                  <div>
+                    <div class="icon_box">
+                      <img src="../img/pdf-icon.png" alt="">
+                    </div>
+                    <p class="file_name">포스터 안내.pdf</p>
+                    <a href="#">
+                      <img src="../img/download-icon.png" alt="">
+                      <span>234회</span>
+                    </a>
+                  </div>
+                  <div>
+                    <div class="icon_box">
+                      <img src="../img/pdf-icon.png" alt="">
+                    </div>
+                    <p class="file_name">행사일정.pdf</p>
+                    <a href="#">
+                      <img src="../img/download-icon.png" alt="">
+                      <span>892회</span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="view_bt">
+                  <a href="#">목록</a>
+                  <a href="#">수정</a>
+                  <a href="#">삭제</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div> 
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+  <script>
+
+    const checkboxes = document.querySelectorAll('.chk')
+    const checkAll = document.querySelector('.all_check')
+
+    function selectAll(e) {
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = e.checked;
+      })
+    }
+
+    checkboxes.forEach(e => {
+      e.onclick = function(){
+        if( this.checked == false ) {
+          checkAll.checked = false
+        }
+      }
+    })
+
+  </script>
+
+</body>
+</html>

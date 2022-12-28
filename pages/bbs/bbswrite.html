@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <title>대한환경공학회 저널검색 > </title>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contents.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <!-- js -->
+  <script src="../js/common.js" defer></script>
+</head>
+<body>
+  
+  <header id="header" class="header"></header>
+
+  <div class="tp">
+    <div class="page_top">
+      <div class="inner">
+        
+      </div>
+    </div>
+    <div class="lng">
+      <div class="c_container">
+        <ul class="left">
+          <li>
+            <a href="#">
+              <img src="../img/home-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page"></li>
+          <li>
+            <img src="../img/gray-arrow.png" alt="">
+          </li>
+          <li class="this_page"></li>
+        </ul>
+        <div class="right">
+          <a href="#" class="btn">
+            <img src="../img/share-icon.png" alt="">
+          </a>
+          <a href="#" class="btn">
+            <img src="../img/print-icon.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="contents bbs bbswrite">
+    <div class="c_container">
+      <div class="contents_inner">
+        <h3 class="contents_tit">게시판글쓰기</h3>
+        <div class="list_wrap">
+          <form action="">
+            <table>
+              <tbody>
+                <tr>
+                  <th><label for="author">작성자</label></th>
+                  <td>
+                    <div>
+                      <input type="text" id="author">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="write_date">작성일</label></th>
+                  <td>
+                    <div>
+                      <input type="date" name="" id="write_date">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="bbs_tit">제&nbsp&nbsp&nbsp목</label></th>
+                  <td class="tit_box">
+                    <div>
+                      <input type="text" id="bbs_tit">
+                      <div class="check_boxs">
+                        <div class="chk_box">
+                          <input type="checkbox" id="secret" class="chk">
+                          <label for="secret">비공개</label>
+                        </div>
+                        <div class="chk_box">
+                          <input type="checkbox" id="push" class="chk">
+                          <label for="push">푸시</label>
+                        </div>
+                        <div class="chk_box">
+                          <input type="checkbox" id="popup" class="chk">
+                          <label for="popup">비밀</label>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>일&nbsp&nbsp&nbsp자</th>
+                  <td class="date_pick">
+                    <div>
+                      <input type="date" name="" id="date_pick1" placeholder="날짜 선택">
+                      <span>~</span>
+                      <input type="date" name="" id="date_pick2" placeholder="날짜 선택">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>링&nbsp&nbsp&nbsp크</th>
+                  <td>
+                    <div class="link">
+                      <input type="text">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div>
+                      <div class="inner_write"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div>
+                      <button>글쓰기</button>
+                      <button type="button" onclick="history.back()">취소</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+</body>
+</html>
